@@ -1,0 +1,28 @@
+@import url("reset.css");
+h1 {
+	color: rgb(194, 7, 7);
+}
+li {
+	color: rgb(0, 53, 3);
+}
+.bogdan {
+	color: rgb(1, 8, 114);
+}
+.origin,.captivity {
+	color: rgb(221, 70, 0);
+} 
+[class*="at"] {
+	color: rgb(109, 168, 0);
+}
+div.nature {
+	color: rgb(4, 98, 141);
+}
+.founder p {
+	color: rgb(152, 168, 2);
+}
+.bogdan .rech {
+	color: rgb(16, 193, 224);
+}
+.parents > p {
+	color: rgb(160, 1, 133);
+}
