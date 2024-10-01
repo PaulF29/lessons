@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css?family=Halant:300,regular,700&display=swap");
+@import url("fonts.css");
+@import url("reset.css");
+
+.text1 {
+	font-size: 30px;
+}
+.text2 {
+	font-style: italic;
+	line-height: 1.5;
+}
+.text3 {
+	font-weight:800;
+	word-spacing: 10px;
+}
+.text4 {
+	color: rgb(45, 0, 95);
+}
+h1 {
+	font-size: 40px;
+	text-align: center;
+}
+footer {
+	text-align: right;
+}
+.text5 {
+	text-decoration: line-through;
+	white-space: nowrap;
+}
+.shadow {
+	text-shadow: 5px 5px 5px #578;
+}
+.cap {
+	text-transform: capitalize;
+}
+h2 {
+	font-family: Halant;
+	text-align: center;
+	font-size: 30px;
+}
+.maket1 {
+	font-family: "Work Sans", serif;
+}
+.maket1 h3 {
+	color: #132238;
+	font-size: 38px;
+	font-weight: 600;
+	line-height: 1.31x;
+}
+.maket1 p {
+	color: #556070;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.33;
+}
+.maket2 {
+	font-family: "DM Sans", serif;
+}
+.maket2 h3 {
+	color: #1e1b39;
+	font-size: 88px;
+	font-weight: 700;
+	line-height: 1.08;
+}
+.maket2 p {
+	color: #474464;
+	font-size: 24px;
+	line-height: 1.75;
+}
+.maket3 {
+	font-family: roboto ,serif;
+}
+.maket3 h3 {
+	color: #091133;
+	font-weight: 500;
+	font-size: 50px;
+	line-height: 1.32;
+	letter-spacing: 1px;
+}
+.maket3 {
+	color: #505f98;
+	font-size: 18px;
+	line-height: 1.66;
+}
