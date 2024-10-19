@@ -1,0 +1,71 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+.header {
+	font-family: Epilogue, serif;
+	text-transform: uppercase;
+	background-color: rgb(4, 71, 46);
+	height: 150px;
+	padding-block-start: 50px;
+}
+h1 {
+	font-size: 48px;
+	text-align: center;
+	padding-block-end: 30px;
+}
+.wrapper {
+	font-family: Epilogue, serif;
+	min-height: 100%;
+	overflow: hidden;
+	padding: 15px;
+	background-color: rgb(57, 117, 95);
+	font-family: Manrope, serif;
+	font-size: 20px;
+}
+.content div:not(:last-child) {
+	margin-block-end: 20px;
+}
+.img {
+	vertical-align: middle;
+	margin-inline-end: 20px;
+}
+.img-1 {
+	vertical-align: middle;
+	margin-inline-end: 20px;
+	background: url(../img/polygon1.svg) 50% no-repeat;
+}
+.img-2 {
+	max-width: 100%;
+	border-radius: 10px;
+}
+.img-3 {
+	max-width: 100%;
+	border-radius: 10px;
+	vertical-align: middle;
+}
+.img-4 {
+	width: 148px;
+	height: 148px;
+	background: url(../img/box.svg) center no-repeat, url(../img/star.svg) no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+}
+.img-5 {
+	border-radius: 10px;
+	vertical-align: middle;
+}
+
+/* ------------------------------------------------- */
+
+.footer {
+	font-family: Epilogue, serif;
+	font-size: 24px;
+	background-color: rgb(4, 71, 46);
+	height: 50px;
+	padding-inline-start: 20px;
+	padding-block-start: 5px;
+}
+
+.botton-home:hover {
+	color: white;
+}
