@@ -1,0 +1,16 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	font-family: Manrope, Helvetica, sans-serif;
+}
+.header, .footer {
+	font-size: 48px;
+	text-align: center;
+	padding-block: 30px;
+}
+.container {
+	padding-inline: 30px;
+}
