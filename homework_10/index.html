@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/icon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/icon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/icon/favicon-16x16.png">
+	<link rel="manifest" href="img/icon/site.webmanifest">
+	<title>Homework10</title>
+</head>
+<body>
+	<div class="wraper">
+		<header class="header">
+			<div class="header__container">
+				<ul class="header__menu menu">
+					<li class="menu__item"><a href="#static-position">static</a></li>
+					<li class="menu__item"><a href="#relative-position">relative</a></li>
+					<li class="menu__item"><a href="#absolute-position">absolute</a></li>
+					<li class="menu__item"><a href="#fixed-position">fixed</a></li>
+					<li class="menu__item"><a href="#sticky-position">sticky</a></li>
+					<li class="menu__item"><a href="#z-index">z-index</a></li>
+					<li class="menu__item"><a href="#">layouts</a>
+						<ul class="menu__sublist">
+							<li class="menu__subitem"><a href="#layout-1">layout №1</a></li>
+							<li class="menu__subitem"><a href="#layout-2">layout №2</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</header>
+
+		<main class="main">
+			<div class="main__conteiner">
+				<h1 class="main__title title">Homework10. Positioning</h1>
+				<div class="position-static static-position" id="static-position">
+					<h2 class="static-position__subtitle subtitle">Статичне позиціонування (position: static;)</h2>
+					<div class="static-position__examples examples-position">
+						<div class="examples-position__item examples-position__item--1"></div>
+						<div class="examples-position__item examples-position__item--2"></div>
+						<div class="examples-position__item examples-position__item--3"></div>
+					</div>
+				</div>
+				<div class="position-relative relative-position" id="relative-position">
+					<h2 class="relative-position__subtitle subtitle">Відносне позиціонування (position: relative;)</h2>
+					<div class="relative-position__examples examples-position">
+						<div class="examples-position__item examples-position__item--1"></div>
+						<div class="examples-position__item examples-position__item--2"></div>
+						<div class="examples-position__item examples-position__item--3"></div>
+					</div>
+				</div>
+				<div class="position-absolute absolute-position" id="absolute-position">
+					<h2 class="absolute-position__subtitle subtitle">Абсолютне позиціонування (position: absolute;)</h2>
+					<div class="absolute-position__examples examples-position">
+						<div class="examples-position__item examples-position__item--1"></div>
+						<div class="examples-position__item examples-position__item--2"></div>
+						<div class="examples-position__item examples-position__item--3"></div>
+					</div>
+				</div>
+				<div class="position-fixed fixed-position" id="fixed-position">
+					<h2 class="fixed-position__subtitle subtitle">Фіксоване позиціонування (position: fixed;)</h2>
+					<div class="fixed-position__examples examples-position">
+						<div class="examples-position__item examples-position__item--1"></div>
+						<div class="examples-position__item examples-position__item--2"></div>
+						<div class="examples-position__item examples-position__item--3"></div>
+					</div>
+				</div>
+				<div class="position-sticky sticky-position" id="sticky-position">
+					<h2 class="sticky-position__subtitle subtitle">Липке позиціонування (position: sticky;)</h2>
+					<div class="sticky-position__examples examples-position">
+						<div class="examples-position__item examples-position__item--1"></div>
+						<div class="examples-position__item examples-position__item--2"></div>
+						<div class="examples-position__item examples-position__item--3"></div>
+					</div>
+				</div>
+				<div class="position-z-index z-index-position" id="z-index">
+					<h2 class="z-index-position__subtitle subtitle">z-index</h2>
+					<div class="z-index-position__examples examples-position">
+						<div class="examples-position__item examples-position__item--1"></div>
+						<div class="examples-position__item examples-position__item--2"></div>
+						<div class="examples-position__item examples-position__item--3"></div>
+					</div>
+				</div>
+
+				<!-- Макет 1 -->
+
+				<h2 class="subtitle">layouts</h2>
+				<div class="main__layout-1-section" id="layout-1">
+					<div class="main__item main__item--circle"></div>
+					<div class="main__item main__item--violet">
+						<img src="img/laptop.webp" alt="Laptop" class="main__picture main__picture--laptop">
+					</div>
+					<div class="main__item main__item--yellow">
+						<img src="img/person.webp" alt="person" class="main__picture main__picture--person">
+					</div>
+					<div class="main__item main__item--red-circle">
+						<img src="img/stars.svg" alt="stars" class="main__picture main__picture--stars">
+					</div>
+					<div class="main__item main__item--letter">
+						<img src="img/letter.svg" alt="letter" class="main__picture main__picture--letter">
+					</div>
+					<div class="main__item main__item--cloud">
+						<img src="img/cloud.svg" alt="cloud" class="main__picture main__picture--cloud">
+					</div>
+					<div class="main__item main__item--ribbon">
+						<img src="img/ribbon.svg" alt="ribbon" class="main__picture main__picture--ribbon">
+					</div>
+					<div class="main__item main__item--arrow">
+						<img src="img/arrow.svg" alt="Arrow" class="main__picture main__picture--arrow">
+					</div>
+				</div>
+
+				<!-- Макет 2 -->
+
+				<div class="main__layout-2-section" id="layout-2">
+					<a href="#" class="main__card-link">
+						<div class="main__card main__card--design">
+							<div class="main__card-info">
+								<div class="main__text">
+									<p>Design</p>
+								</div>
+								<h2 class="main__title-sofa">sofa</h2>
+							</div>
+							<img src="img/sofa.webp" alt="Design card" class="main__image">
+						</div>
+					</a>
+				</div>
+			</div>
+		</main>
+		<footer class="footer"><p>2024</p></footer>
+	</div>
+</body>
+</html>
