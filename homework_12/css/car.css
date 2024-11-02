@@ -1,0 +1,272 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+	font-family: 'Epilogue', sans-serif;
+	font-size: 18px;
+}
+.box {
+	min-height: 100%;
+	overflow: hidden;
+}
+.main {
+	max-width: 1400px;
+	margin-inline: auto;
+}
+.header,
+.footer {
+	padding-block: 20px;
+	background-color: #309676f6;
+	text-align: center;
+	font-size: 40px;
+}
+.car {
+	padding-block: 120px 10px;
+	min-height: 750px;
+	background: url('../img/desert.avif') center/cover no-repeat;
+}
+.car__container {
+	position: relative;
+}
+.car__wrapper {
+	position: relative;
+}
+.car__wheel {
+	position: absolute;
+	max-width: 180px;
+	min-height: 180px;
+	border-radius: 50%;
+	inset: 428px 130px;
+}
+.wheel__item-1 {
+	position: absolute;
+	background-color: #00000000;
+	width: 152px;
+	height: 152px;
+	border-radius: 50%;
+	inset: 15px 16px;
+	border: 8px solid #bcb1ad;
+	z-index: 10;
+}
+.wheel__item-2 {
+	position: absolute;
+	inset: 0;
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	inset: 0 2px;
+	background: radial-gradient(circle,
+			rgb(190, 190, 190) 35%,
+			rgb(115, 153, 255) 36%,
+			rgba(8, 4, 4, 1) 37%,
+			rgb(0, 0, 0) 93%);
+	z-index: 8;
+}
+.wheel__item-2::after {
+	content: "";
+	position: absolute;
+	inset: 15px;
+	width: 151px;
+	height: 151px;
+	border-radius: 50%;
+	border: 25px dashed #565351c1;
+}
+.wheel__item-3 {
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background-color: #565351;
+	z-index: 11;
+	inset: 56px;
+}
+.wheel__item-3::after {
+	content: "";
+	position: absolute;
+	inset: 15px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 12px dotted rgb(185, 197, 207);
+}
+.wheel--right {
+	position: absolute;
+	max-width: 180px;
+	min-height: 180px;
+	border-radius: 50%;
+	inset: 428px 835px;
+}
+.car__body {
+	position: absolute;
+	max-width: 1200px;
+	min-height: 245px;
+	inset: 282px 84px;
+}
+.body__bottom {
+	position: absolute;
+	max-width: 1100px;
+	height: 60px;
+	inset: 190px 0 0 4px;
+	background-color: #353030;
+	border-radius: 0px 0 30px 50px;
+	z-index: 2;
+	perspective: 100px;
+	box-shadow: 0px -15px 20px #353030;
+}
+.body__middle {
+	position: absolute;
+	max-width: 1100px;
+	height: 150px;
+	inset: 40px 7px 0 3px;
+	background-color: #91898e;
+	border-radius: 50% 10px 0px 0px;
+}
+.body__middle::after {
+	content: "";
+	position: absolute;
+	max-width: 25px;
+	height: 50px;
+	inset: 80px 0px 0px 0px;
+	background-color: #ffd038;
+	border-radius: 0 50% 50% 0;
+	z-index: 5;
+}
+.body__middle::before {
+	content: "";
+	position: absolute;
+	max-width: 50px;
+	height: 100px;
+	inset: 27px 0px 0px 1050px;
+	background-color: red;
+	border-radius: 50% 0 0 50%;
+}
+.body__fuel {
+	position: absolute;
+	max-width: 70px;
+	height: 50px;
+	inset: 50px 0px 0 750px;
+	background-color: #918c89;
+	border-radius: 5px;
+	border: 1px solid #686868;
+	overflow: hidden;
+}
+.body__window {
+	position: absolute;
+	max-width: 50px;
+	height: 140px;
+	inset: -90px 0px 0 260px;
+	background: rgb(74, 172, 218);
+	border-radius: 100% 0px 0px 0px;
+	z-index: 2;
+}
+.glass__item {
+	position: absolute;
+	max-width: 190px;
+	height: 140px;
+	background-color: rgb(74, 172, 218);
+	border-radius: 5px 5px 0px 0px;
+	z-index: 1;
+}
+.glass__item--1 {
+	inset: -90px 0px 0 310px;
+}
+.glass__item--2 {
+	inset: -90px 0px 0 530px;
+}
+.body__up {
+	position: absolute;
+	max-width: 50px;
+	height: 160px;
+	inset: -100px 0px 50px 250px;
+	background-color: #918c89;
+	border-radius: 100% 0px 0px 0px;
+	overflow: hidden;
+	z-index: 1;
+}
+.body__up-2 {
+	position: absolute;
+	max-width: 450px;
+	height: 160px;
+	inset: -100px 0px 50px 300px;
+	background-color: #918c89;
+	border-radius: 0 10px 0 0;
+	overflow: hidden;
+	z-index: 1;
+}
+.body__line {
+	position: absolute;
+	max-width: 1px;
+	height: 140px;
+	inset: 50px 0px 0px 260px;
+	background-color: #686868;
+	z-index: 2;
+}
+.door__line {
+	position: absolute;
+	max-width: 1px;
+	height: 280px;
+	background-color: #686868;
+	z-index: 2;
+}
+.door__line--1 {
+	inset: -90px 0px 0px 515px;
+}
+.door__line--2 {
+	inset: -90px 0px 0px 735px;
+}
+.body__handle-2 {
+	position: absolute;
+	max-width: 60px;
+	height: 20px;
+	inset: 60px 0px 0px 660px;
+	background: rgb(82, 82, 82);
+	border-radius: 10px;
+	z-index: 2;
+}
+.handle__item {
+	position: absolute;
+	max-width: 60px;
+	height: 20px;
+	background: rgb(82, 82, 82);
+	border-radius: 10px;
+	z-index: 2;
+}
+.handle__item--1 {
+	inset: 60px 0px 0px 440px;
+}
+.handle__item--2 {
+	inset: 60px 0px 0px 660px;
+}
+
+
+/* анімація */
+
+.wheel__item-2::after,
+.wheel__item-3::after {
+	transform: rotate(0deg);
+	animation: wheel 10s linear 3;
+}
+@keyframes wheel {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(-360deg);
+	}
+}
+.car__container {
+	top: 0;
+	left: 1400px;
+	animation: car 34s linear forwards;
+}
+@keyframes car {
+	0% {
+		left: 1400px;
+	}
+	50% {
+		left: 0px;
+	}
+	100% {
+		left: -1400px;
+	}
+}
