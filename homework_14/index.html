@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/icon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/icon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/icon/favicon-16x16.png">
+	<link rel="manifest" href="img/icon/site.webmanifest">
+	<title>Homework14. Form.</title>
+</head>
+<body>
+	<div class="wraper">
+		<header class="header">
+			<h1 class="header__title">Homework14. Form.</h1>
+		</header>
+		<main>
+			<div class="page">
+				<div class="light">
+					<div class="light__container">
+						<div class="light__box">
+							<div class="light__text">
+								There are many variations of passages of Lorem Ipsu available,
+								but the majority have suffered alte.
+							</div>
+							<form id="form-light" class="form-light" action="#" enctype="multipart/form-data">
+
+								<div class="form-light__item">
+									<input id="name" required name="form[]" placeholder="Name*" class="form-light__input" type="text">
+								</div>
+
+								<div class="form-light__item">
+									<input id="email" required name="form[]" placeholder="Email*" class="form-light__input" type="email">
+								</div>
+
+								<div class="form-light__item">
+									<input id="location" name="form[]" placeholder="Location" class="form-light__input" type="text">
+								</div>
+
+								<div class="form-light__item">
+									<div class="form-light__items">
+										<input id="budget" name="form[]" placeholder="Budget*" class="form-light__input" type="text">
+										<input id="subject" name="form[]" placeholder="Subject*" class="form-light__input" type="text">
+									</div>
+								</div>
+
+								<div class="form-light__item">
+									<input id="message" required name="form[]" placeholder="Message*" class="form-light__input" type="text">
+								</div>
+
+							</form>
+							<button type="submit" form="form-light" class="light__button">Submit</button>
+						</div>
+					</div>
+				</div>
+				
+				<div class="dark">
+					<div class="dark__container">
+						<form class="form-dark" action="#" enctype="multipart/form-data">
+							
+							<div class="form-dark__items">
+								<div class="form-dark__item">
+									<label class="form-dark__label" for="first">First Name</label>
+									<input name="form[]" id="first" type="text" required placeholder="Enter First Name"
+										class="form-dark__input">
+								</div>
+								<div class="form-dark__item">
+									<label class="form-dark__label" for="last">Last Name</label>
+									<input name="form[]" id="last" type="text" required placeholder="Enter Last Name"
+										class="form-dark__input">
+								</div>
+							</div>
+
+							<div class="form-dark__items">
+								<div class="form-dark__item">
+									<label class="form-dark__label" for="post">Email</label>
+									<input name="form[]" id="post" type="email" required placeholder="Enter your Email" class="form-dark__input">
+								</div>
+								<div class="form-dark__item">
+									<label class="form-dark__label" for="tel">Phone Number</label>
+									<input name="form[]" id="tel" type="tel" required placeholder="Enter Phone Number" class="form-dark__input">
+								</div>
+							</div>
+
+							<div class="form-dark__items">
+								<div class="form-dark__item">
+									<label class="form-dark__label" for="textarea">Message</label>
+									<textarea name="form[]" id="textarea" placeholder="Enter your Message"
+										class="form-dark__textarea"></textarea>
+								</div>
+							</div>
+
+							<div class="form-dark__items">
+								<div class="checkbox">
+									<input id="checkbox" class="checkbox__input" checked name="checkbox" value="1"
+										type="checkbox">
+									<label class="checkbox__label" for="checkbox">I agree with Terms of Use and Privacy
+										Policy</label>
+								</div>
+								<button type="submit" class="button-dark"> Send Message</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer"><p>2024</p></footer>
+	</div>
+</body>
+</html>
