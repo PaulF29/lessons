@@ -1,0 +1,192 @@
+/*==============================================================================================================*/
+
+/* верхня частина секції з заголовком */
+
+.section-heading__label {
+	color: #ef6d58;
+	line-height: 2;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	margin-block-end: 20px;
+}
+
+@media (max-width: 767.98px) {
+	.section-heading__label {
+		margin-block-end: 10px;
+	}
+}
+
+.section-heading__title {
+	font-size: 56px;
+	font-weight: 800;
+	line-height: 1.14;
+	/* 114.286% */
+	letter-spacing: -1px;
+}
+
+@media (max-width: 991.98px) {
+	.section-heading__title {
+		font-size: 48px;
+		font-weight: 600;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.section-heading__title {
+		font-size: 40px;
+		margin-block-end: 16px;
+	}
+}
+
+.section-heading__title:not(:last-child) {
+	margin-block-end: 36px;
+}
+
+@media (max-width: 767.98px) {
+	.section-heading__title:not(:last-child) {
+		margin-block-end: 16px;
+	}
+}
+
+/*==============================================================================================================*/
+
+/* кнопка */
+
+.main-button {
+	position: relative;
+	width: fit-content;
+	display: block;
+	padding: 18px 30px 16px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 6px;
+	font-weight: 900;
+	line-height: 1.5;
+	text-transform: uppercase;
+	overflow: hidden;
+}
+
+.main-button--secondary {
+	background-color: #ef6d58;
+}
+
+.main-button span {
+	position: relative;
+	z-index: 2;
+}
+
+.main-button::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -35%;
+	width: 30%;
+	height: 200%;
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.6));
+	transform: skew(-30deg) translate(-100%, -25%);
+	will-change: left;
+}
+
+.main-button:hover::before {
+	left: 150%;
+	transition: left 1s;
+}
+
+.main-button--center {
+	margin: 0 auto;
+}
+/*==============================================================================================================*/
+/* кнопка dark-page */
+/*==============================================================================================================*/
+.dark-page {
+	margin: 0 auto;
+	background-color: #141414;
+	padding: 8px 100px 5px;
+}
+
+.darkblue-page {
+	margin: 0 auto;
+	background-color: #28293e;
+	padding: 8px 80px 5px;
+}
+
+/* label */
+
+.lable {
+	display: inline;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.5;
+	border-radius: 8px;
+	background: #e50000;
+	padding: 10px 24px;
+	border: 1px solid #ffffff00;
+}
+
+/* slider */
+
+.head__slider {
+	flex: 0 1 257px;
+	border-radius: 12px;
+	border: 1px solid #1f1f1f;
+	background-color: #0f0f0f;
+	display: flex;
+	gap: 16px;
+	align-items: center;
+	padding: 16px;
+	max-height: 88px;
+	max-width: 257px;
+}
+
+.head__line {
+	display: flex;
+	gap: 3px;
+}
+
+.head__line * {
+	border-radius: 100px;
+	background: #333;
+	width: 16px;
+	height: 4px;
+}
+
+.head__line *:first-child {
+	background: #e50000;
+	width: 23px;
+}
+
+.head__arrow {
+	border-radius: 8px;
+	border: 1px solid #1f1f1f;
+	background: #1a1a1a;
+	padding: 14px;
+	width: 100%;
+	flex-basis: 56px;
+	transition: all 0.5s ease;
+}
+
+.head__arrow--mirror {
+	transform: rotate(180deg);
+}
+
+.head__arrow:hover {
+	border: 1px solid #ffffff;
+	box-shadow: 0 0 5px #ffffff75;
+}
+
+/* box */
+
+.box {
+	border: 1px solid #262626;
+	border-radius: 12px;
+	padding: 50px;
+}
+@media (max-width: 767.98px) {
+	.box {
+		padding: 20px;
+	}
+}
+/*==============================================================================================================*/
+/* @media */
+/*==============================================================================================================*/
+
+
