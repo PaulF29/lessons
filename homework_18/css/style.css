@@ -1,0 +1,156 @@
+@import "fonts.css";
+@import "reset.css";
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+	font-family: "Roboto", sans-serif;
+	color: #37447e;
+	background-color: #e7ecff;
+}
+
+.wrapper > main {
+	flex-grow: 1;
+}
+
+[class*="__container"] {
+	max-width: 1342px;
+	margin-inline: auto;
+	padding-inline: 15px;
+}
+
+.page {
+	width: 100%;
+	margin-block: 30px;
+}
+/*==============================================================================================================*/
+/* header */
+/*==============================================================================================================*/
+.header {
+	padding-block: 30px;
+	background-color: #929ecc;
+}
+.header__container {
+	text-align: center;
+	font-size: 40px;
+	
+	font-weight: 800;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	gap: 10px;
+}
+.header__container a {
+	color: #b1b7cf;
+}
+.header__container a:hover {
+	color: #37447e;
+}
+/*==============================================================================================================*/
+h2 {
+	padding-block-end: 10px;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 800;
+}
+/* ============================================================================================================= */
+/* Masonry */
+/* ============================================================================================================= */
+.page__cards {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 16px;
+	row-gap: 12px;
+}
+@media (min-width: 767.98px) {
+	.page__cards {
+		grid-template-columns: repeat(4, 1fr);
+		column-gap: 32px;
+		row-gap: 24px;
+	}
+	.page__card:nth-child(17n + 1) .page__image,
+	.page__card:nth-child(17n + 4) .page__image,
+	.page__card:nth-child(17n + 8) .page__image,
+	.page__card:nth-child(17n + 10) .page__image,
+	.page__card:nth-child(17n + 16) .page__image {
+		aspect-ratio: 305 / 184;
+	}
+	
+	.page__card:nth-child(17n + 2) .page__image,
+	.page__card:nth-child(17n + 6) .page__image,
+	.page__card:nth-child(17n + 7) .page__image,
+	.page__card:nth-child(17n + 12) .page__image,
+	.page__card:nth-child(17n + 15) .page__image {
+		aspect-ratio: 305 / 296;
+	}
+	
+	.page__card:nth-child(17n + 3) .page__image,
+	.page__card:nth-child(17n + 5) .page__image,
+	.page__card:nth-child(17n + 9) .page__image,
+	.page__card:nth-child(17n + 11) .page__image,
+	.page__card:nth-child(17n + 14) .page__image,
+	.page__card:nth-child(17n + 17) .page__image {
+		aspect-ratio: 305 / 152;
+	}
+	
+	.page__card:nth-child(17n + 13) .page__image {
+		aspect-ratio: 305 / 504;
+	}
+	
+	.page__card:nth-child(17n + 1),
+	.page__card:nth-child(17n + 4),
+	.page__card:nth-child(17n + 8),
+	.page__card:nth-child(17n + 10),
+	.page__card:nth-child(17n + 16) {
+		grid-row: span 2;
+	}
+	
+	.page__card:nth-child(17n + 2),
+	.page__card:nth-child(17n + 5),
+	.page__card:nth-child(17n + 6),
+	.page__card:nth-child(17n + 7),
+	.page__card:nth-child(17n + 14),
+	.page__card:nth-child(17n + 12),
+	.page__card:nth-child(17n + 15) {
+		grid-row: span 3;
+	}
+	
+	.page__card:nth-child(17n + 3),
+	.page__card:nth-child(17n + 9),
+	.page__card:nth-child(17n + 11),
+	.page__card:nth-child(17n + 17) {
+		grid-row: span 1;
+	}
+	
+	.page__card:nth-child(17n + 13) {
+		grid-row: span 5;
+	}
+}
+
+.page__image {
+	aspect-ratio: 305/184;
+}
+
+.page__image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/*==============================================================================================================*/
+/* footer */
+/*==============================================================================================================*/
+.footer {
+	padding-block: 30px;
+	background-color: #929ecc
+}
+.footer__container {
+	text-align: center;
+}
+.footer__container h2 {
+	font-size: 40px;
+	font-weight: 800;
+}
+/*==============================================================================================================*/
